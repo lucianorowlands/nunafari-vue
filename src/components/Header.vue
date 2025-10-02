@@ -1,7 +1,14 @@
 <template>
   <header class="bg-gray-100 p-4 shadow-md flex justify-between items-center">
     <!-- Logo -->
-    <router-link to="/" class="text-xl font-bold text-green-600">Nuna Fari</router-link>
+    <router-link to="/" class="flex items-center">
+  <img
+    src="/assets/logo-nunafari-green-background.png"
+    alt="Logo Nuna Fari"
+    class="h-10 w-auto"
+  />
+</router-link>
+
 
     <!-- Menu principal (mantive seu código) -->
     <nav class="space-x-4 flex items-center">
@@ -31,6 +38,7 @@
       </div>
 
       <!-- Aconselhamentos -->
+       <!--
       <div class="relative" @mouseleave="openMenu = null">
         <button @mouseover="openMenu = 'acons'" class="hover:text-green-600">
           {{ $t('menu-header.menu.aconselhamentos') }}
@@ -43,6 +51,7 @@
           <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">{{ $t('menu-header.menu.mentoriaArtistica') }}</a></li>
         </ul>
       </div>
+      -->
 
       <!-- Música -->
       <div class="relative" @mouseleave="openMenu = null">
