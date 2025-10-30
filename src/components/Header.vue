@@ -10,12 +10,17 @@
 </router-link>
 
 
-    <!-- Menu principal (mantive seu código) -->
+    <!-- Menu -->
+     
     <nav class="space-x-4 flex items-center">
       <router-link to="/" class="hover:text-green-600">{{ $t('menu-header.menu.home') }}</router-link>
+      <!-- Magazine -->
+      <!--
       <router-link to="/nuna-vivi" class="hover:text-green-600">{{ $t('menu-header.menu.revista') }}</router-link>
+      -->
 
-      <!-- Aulas -->
+      <!-- Classes -->
+      <!--
       <div class="relative" @mouseleave="openMenu = null">
         <button @mouseover="openMenu = 'aulas'" class="hover:text-green-600">
           {{ $t('menu-header.menu.aulas') }}
@@ -36,6 +41,7 @@
           </li>
         </ul>
       </div>
+      -->
 
       <!-- Aconselhamentos -->
        <!--
@@ -54,6 +60,7 @@
       -->
 
       <!-- Música -->
+       <!-- 
       <div class="relative" @mouseleave="openMenu = null">
         <button @mouseover="openMenu = 'musica'" class="hover:text-green-600">
           {{ $t('menu-header.menu.musica') }}
@@ -66,19 +73,25 @@
           <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">{{ $t('menu-header.menu.musicaPartituras') }}</a></li>
         </ul>
       </div>
+      -->
 
+      <!-- Other Services -->
+      <!--
       <a href="#" class="hover:text-green-600">{{ $t('menu-header.menu.servicos') }}</a>
+      -->
+
+      <!-- About -->
       <router-link to="/about" class="hover:text-green-600">{{ $t('menu-header.menu.sobre') }}</router-link>
     </nav>
 
-    <!-- Seletor de idioma (substituído) -->
+    <!-- Language Selector -->
     <div class="ml-4 relative" ref="langContainer">
       <!-- botão que mostra o idioma atual -->
       <button @click="toggleLangOpen" class="border rounded px-2 py-1">
         {{ currentLangUpper }}
       </button>
 
-      <!-- dropdown mostra apenas os OUTROS idiomas -->
+      <!-- dropdown -->
       <ul
         v-if="langOpen"
         class="absolute right-0 mt-1 bg-white border rounded shadow-md py-1 w-28 z-10"
