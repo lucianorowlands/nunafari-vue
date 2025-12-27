@@ -1,8 +1,8 @@
 <template>
   <!-- Highlights section: logo abaixo da Hero.
        Comentários no código ajudam a localizar onde comentar/remover blocos -->
-  <section class="py-12" :class="inheritHeroBg ? 'bg-transparent' : 'bg-white'">
-    <!-- Título vindo do i18n padrão (já funcionando no seu projeto) -->
+  <section class="py-12 bg-transparent">
+    <!-- Título vindo do i18n padrão -->
     <h2 class="text-center font-bold text-3xl mb-8">
       {{ $t('home.highlights.sectionTitle') }}
     </h2>

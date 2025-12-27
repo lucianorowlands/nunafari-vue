@@ -1,6 +1,8 @@
 <template>
-    <Hero />
-    <Highlights />
+    <section class="bg-gray-100">
+        <Hero />
+        <Highlights />
+    </section>
 </template>
 
 <script setup>

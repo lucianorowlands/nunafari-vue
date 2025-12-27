@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center py-20 bg-gray-100">
+  <section class="text-center py-20">
     <h1 class="font-poppins text-[4rem] font-extrabold text-[#21A51F]">
       {{ $t('home.hero.title') }}
     </h1>
